@@ -48,4 +48,4 @@ function changeColor(e) {
     };
 }
 
-createGrid(100);
+createGrid(16);
