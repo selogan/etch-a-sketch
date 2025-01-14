@@ -58,6 +58,6 @@ main button {
     box-shadow: #00000026 4px 4px 4px 4px;
 }
 
-#grid {
+.grid {
     opacity: 0.1;
 }

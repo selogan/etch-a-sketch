@@ -1,12 +1,14 @@
 const gridContainer = document.querySelector("#grid-container");
 gridContainer.addEventListener("mouseover", changeColor);
+const gridHeight = gridContainer.offsetHeight;
+const gridWidth = gridContainer.offsetWidth;
 
 function createGrid(gridSize) {
     for (let i = 0; i < gridSize * gridSize; i++) {
         const grid = document.createElement("div");
-        grid.setAttribute("id", "grid");
-        grid.style.height = gridContainer.offsetHeight / gridSize + "px";
-        grid.style.width = gridContainer.offsetWidth / gridSize + "px";
+        grid.setAttribute("class", "grid");
+        grid.style.height = gridHeight / gridSize + "px";
+        grid.style.width = gridWidth / gridSize + "px";
         gridContainer.appendChild(grid);
     }
 }
@@ -46,4 +48,4 @@ function changeColor(e) {
     };
 }
 
-createGrid(16);
+createGrid(100);
