@@ -17,7 +17,7 @@ const resetBtn = document.querySelector("#reset");
 resetBtn.addEventListener("click", resetGrid);
 
 function resetGrid() {
-    const grids = document.querySelectorAll("#grid");
+    const grids = document.querySelectorAll(".grid");
     grids.forEach(grid => grid.style.backgroundColor = "white");
 }
 
